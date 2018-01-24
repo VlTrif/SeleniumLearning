@@ -36,11 +36,11 @@ public class BaseTest {
 
     @AfterClass
     public static void tearDown() throws Exception {
-        //driver.quit();
+        driver.quit();
     }
 
-    protected void fillField(By locator, String value) {
+    /*protected void fillField(By locator, String value) {
         driver.findElement(locator).clear();
         driver.findElement(locator).sendKeys(value);
-    }
+    }*/
 }

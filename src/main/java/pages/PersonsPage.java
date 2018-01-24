@@ -1,6 +1,7 @@
 package pages;
 
-import com.sun.org.apache.xpath.internal.operations.String;
+//import com.sun.org.apache.xpath.internal.operations.String;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class PersonsPage {
+public class PersonsPage extends AbstractPage{
 
     @FindBy(xpath = "//*[contains(text(),'Оформление')]")
     WebElement title;
@@ -56,7 +57,12 @@ public class PersonsPage {
                 .until(ExpectedConditions.visibilityOf(title));
     }
 
-    public void fillField(java.lang.String fieldName, String value){
+    /*protected void fillField(WebElement element, String value) {
+        element.clear();
+        element.sendKeys(value);
+    }*/
+
+    public void fillField(String fieldName, String value){
         switch (fieldName){
             case  "Фамилия застрахованного":
                 fillField(insSurname, value);
@@ -93,6 +99,12 @@ public class PersonsPage {
                 break;
             default:  throw new AssertionError("Поле '"+fieldName+"' не объявлено на странице");
         }
+    }
+
+    public void checkError (String errorMessage){
+        String xpath = "//div[contains(@ng-show,'tryNext && myForm.$invalid')]"; //div[contains(@class,'b-form-center-pos b-form-error-message')]//*[contains(text(),'')]";
+        String actualValue = driver.findElement(By.xpath(xpath)).getText();
+        Assert.assertTrue(actualValue, actualValue.contains(errorMessage));
     }
 
 }

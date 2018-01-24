@@ -43,5 +43,7 @@ public class TaskTwoTest extends BaseTest {
         personsPage.fillField("Кем выдан","Отделением УФМС по г.Москва");
 
         personsPage.cntButton.click();
+
+        personsPage.checkError("Заполнены не все обязательные поля");
     }
 }
