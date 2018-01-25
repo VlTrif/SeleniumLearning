@@ -1,11 +1,14 @@
 import org.junit.Ignore;
 import org.junit.Test;
+import org.openqa.selenium.By;
 import pages.CalcPage;
 import pages.MainPage;
 import pages.PersonsPage;
 import pages.TravelersPage;
 
 import java.util.ArrayList;
+
+import static org.junit.Assert.assertEquals;
 
 public class TaskTwoTest extends BaseTest {
 
@@ -44,6 +47,9 @@ public class TaskTwoTest extends BaseTest {
 
         personsPage.cntButton.click();
 
-        personsPage.checkError("Заполнены не все обязательные поля");
+        //personsPage.checkError("Заполнены не все обязательные поля");
+
+        assertEquals("Заполнены не все обязательные поля",
+                driver.findElement(By.xpath("//div[contains(@ng-show,'tryNext && myForm.$invalid')]")).getText());
     }
 }

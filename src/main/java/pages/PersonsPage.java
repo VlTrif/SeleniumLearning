@@ -101,10 +101,12 @@ public class PersonsPage extends AbstractPage{
         }
     }
 
-    public void checkError (String errorMessage){
+    /*public void checkError (String errorMessage){
         String xpath = "//div[contains(@ng-show,'tryNext && myForm.$invalid')]"; //div[contains(@class,'b-form-center-pos b-form-error-message')]//*[contains(text(),'')]";
         String actualValue = driver.findElement(By.xpath(xpath)).getText();
         Assert.assertTrue(actualValue, actualValue.contains(errorMessage));
-    }
+
+    }*/
+
 
 }
