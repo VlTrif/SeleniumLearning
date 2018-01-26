@@ -10,7 +10,7 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 public class BaseSteps {
-    public static WebDriver getDriver() {
+    /*public static WebDriver getDriver() {
         return driver;
     }
 
@@ -25,7 +25,7 @@ public class BaseSteps {
             /*case "firefox":
                 System.setProperty("webdriver.gecko.driver", properties.getProperty("webdriver.gecko.driver"));
                 driver = new FirefoxDriver();
-                break;*/
+                break;*//*
             case "chrome":
                 System.setProperty("webdriver.chrome.driver", properties.getProperty("webdriver.chrome.driver"));
                 driver = new ChromeDriver();
@@ -38,6 +38,22 @@ public class BaseSteps {
         baseUrl = properties.getProperty("app.url");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+        driver .manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+    }*/
+
+    public static WebDriver driver;
+
+    public static WebDriver getDriver(){
+        return driver;
+    }
+
+    @BeforeClass
+    public static void startTest(){
+        System.setProperty("webdriver.chrome.driver", "drv/chromedriver.exe");
+        driver = new ChromeDriver();
+        driver .get("http://www.sberbank.ru/ru/person");
+        driver .manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        driver .manage().window().maximize();
         driver .manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
     }
 
