@@ -1,6 +1,12 @@
+util\TestProperties.class
+pages\AbstractPage.class
+pages\PersonsPage.class
+steps\MainPageSteps.class
 pages\CalcPage.class
 pages\TravelersPage.class
-TestProperties.class
-pages\AbstractPage.class
+util\AllureListener.class
+steps\BaseSteps.class
+steps\CalcPageSteps.class
+steps\PersonsPageSteps.class
 pages\MainPage.class
-pages\PersonsPage.class
+steps\TravelersPageSteps.class
