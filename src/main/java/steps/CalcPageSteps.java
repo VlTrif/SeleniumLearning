@@ -15,13 +15,13 @@ public class CalcPageSteps extends BaseSteps{
     }*/
 
     @Step("Выбрана программа страхования {0}")
-    public void choiseBox(String boxItem){
+    public void selectBoxStep(String boxItem){
         new CalcPage(driver).selectBox(boxItem);
     }
 
     @Step("Нажата кнопка подтверждения")
     public void goToNextCalcPage(){
-        new CalcPage(driver).setConfirmBtn();
+        new CalcPage(driver).confirmBtn.click();
     }
 
 }

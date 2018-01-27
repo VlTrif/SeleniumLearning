@@ -25,4 +25,13 @@ public class PersonsPageSteps extends BaseSteps {
     public void stepWhenFillingFields(HashMap<String ,String> fields){
         fields.forEach(this::stepFillField);
     }
+
+    @Step("Нажатие кнопки продолжить")
+    public void clickingCntBtn(){
+        new PersonsPage(driver).cntButton.click();
+    }
+    @Step("Проверка ошибки")
+    public void errorValidation() {
+        new PersonsPage(driver).checkFieldErrorMessage();
+    }
 }

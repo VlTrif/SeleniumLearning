@@ -55,7 +55,7 @@
                     </execution>
                 </executions>
             </plugin>
-            <plugin>
+            <!---<plugin>
                     <groupId>org.eclipse.jetty</groupId>
                     <artifactId>jetty-maven-plugin</artifactId>
                     <version>9.4.5.v20170502</version>
@@ -67,7 +67,7 @@
                             <port>9999</port>
                         </httpConnector>
                     </configuration>
-            </plugin>
+            </plugin> -->
         </plugins>
     </build>
     <dependencies>

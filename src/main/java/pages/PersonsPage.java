@@ -9,6 +9,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import steps.BaseSteps;
+
+import static org.junit.Assert.assertEquals;
 
 public class PersonsPage extends AbstractPage{
 
@@ -99,6 +102,15 @@ public class PersonsPage extends AbstractPage{
                 break;
             default:  throw new AssertionError("Поле '"+fieldName+"' не объявлено на странице");
         }
+    }
+
+    public void checkFieldErrorMessage(){
+        //String xpath = "//*[text()='"+field+"']/..//*[@class='validation-error']";
+        String actualValue = BaseSteps.getDriver().findElement(By.xpath("//div[contains(@ng-show,'tryNext && myForm.$invalid')]")).getText();
+
+        assertEquals("Заполнены не все обязательные поля",actualValue);
+        //Assert.assertTrue(String.format("Получено значение [%s]. Ожидалось [%s]", actualValue, errorMessage),
+         //       actualValue.contains(errorMessage));
     }
 
     /*public void checkError (String errorMessage){

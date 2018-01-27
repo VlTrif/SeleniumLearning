@@ -17,7 +17,7 @@ public class CalcPage extends AbstractPage{
     WebElement choiseBox;
 
     @FindBy(xpath = "//*[contains(@class,'b-button-block-center')]//*[contains(@class,'b-continue-btn')]")
-    WebElement confirmBtn;
+    public WebElement confirmBtn;
 
     public CalcPage (WebDriver driver) {
         PageFactory.initElements(driver, this);
@@ -29,7 +29,7 @@ public class CalcPage extends AbstractPage{
         choiseBox.findElement(By.xpath(".//*[contains(text(),'"+boxItem+"')]")).click();
     }
 
-    public void setConfirmBtn(){
+    /*public void setConfirmBtn(){
         confirmBtn.click();
-    }
+    }*/
 }
