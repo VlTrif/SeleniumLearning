@@ -31,7 +31,7 @@
                 <configuration>
                     <testFailureIgnore>true</testFailureIgnore>
                     <argLine>
-                        -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
+                        -Dfile.encoding=UTF-8 -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                     </argLine>
                     <properties>
                         <property>
@@ -40,6 +40,13 @@
                         </property>
                     </properties>
                 </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.aspectj</groupId>
+                        <artifactId>aspectjweaver</artifactId>
+                        <version>${aspectj.version}</version>
+                    </dependency>
+                </dependencies>
             </plugin>
             <plugin>
                 <groupId>ru.yandex.qatools.allure</groupId>
@@ -86,11 +93,7 @@
             <artifactId>allure-junit-adaptor</artifactId>
             <version>${allure.version}</version>
         </dependency>
-        <dependency>
-            <groupId>org.aspectj</groupId>
-            <artifactId>aspectjweaver</artifactId>
-            <version>${aspectj.version}</version>
-        </dependency>
+
 
         <dependency>
             <groupId>org.slf4j</groupId>

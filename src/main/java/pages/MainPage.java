@@ -7,6 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import steps.BaseSteps;
 
 public class MainPage extends AbstractPage{
     //WebDriver driver;
@@ -15,19 +16,24 @@ public class MainPage extends AbstractPage{
     WebElement mainMenu;
 
     @FindBy(xpath = "//ul[contains(@aria-labelledby,'alt-menu-mid__header4')]//*[contains(text(),'Страхование путешественников')]")
-    WebElement title;
+    public WebElement title;
 
     @FindBy(xpath = "//ul[contains(@aria-labelledby,'alt-menu-mid__header4')]//a[contains(@aria-label,'Застраховать себя ')]/../*[contains(@class,'alt-menu-collapser__area alt-menu-collapser__area_cols_3')]")
     WebElement altMenu;
 
     public MainPage (WebDriver driver) {
         PageFactory.initElements(driver, this);
+
     }
 
     public void selectMainMenu (String menuItem){
         mainMenu.findElement(By.xpath(".//a[contains(@aria-label,'"+menuItem+"')]")).click();
     }
 
+    public void mainPageAltMenuWait(){
+        (new WebDriverWait(BaseSteps.getDriver(), 10))
+                .until(ExpectedConditions.visibilityOf(title));
+    }
     public void selectAltMenu (String menuItem){
         //(new WebDriverWait(driver, 15)).until(ExpectedConditions.visibilityOf(title));
         altMenu.findElement(By.xpath(".//*[contains(text(),'"+menuItem+"')]")).click();

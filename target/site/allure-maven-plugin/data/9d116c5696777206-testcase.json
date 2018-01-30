@@ -1,0 +1,347 @@
+{
+  "uid" : "9d116c5696777206",
+  "name" : "tryInsurance",
+  "title" : "Страхование",
+  "time" : {
+    "start" : 1517298880811,
+    "stop" : 1517298892019,
+    "duration" : 11208
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 20
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "59b87b5c00b6c60b",
+    "name" : "AllureReportTest",
+    "title" : "Allure report test"
+  },
+  "steps" : [ {
+    "name" : "selectMenuItem[Застраховать себя ]",
+    "title" : "Выбран пункт меню Застраховать себя ",
+    "time" : {
+      "start" : 1517298881061,
+      "stop" : 1517298882598,
+      "duration" : 1537
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "waitingMainPageTitleStep",
+    "title" : "Ожидание открытия доп. меню",
+    "time" : {
+      "start" : 1517298882599,
+      "stop" : 1517298882907,
+      "duration" : 308
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "selectAltMenuItem[Страхование путешественников]",
+    "title" : "Выбран вид страхования Страхование путешественников",
+    "time" : {
+      "start" : 1517298882908,
+      "stop" : 1517298885869,
+      "duration" : 2961
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "selectImgItem[/portalserver/content/atom/contentRepository/content/person/travel/banner-zashita-traveler.jpg?id=f6c836e1...]",
+    "title" : "Нажатие на картинку - Офрмить онлайн",
+    "time" : {
+      "start" : 1517298885871,
+      "stop" : 1517298886640,
+      "duration" : 769
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "selectBoxStep[Минимальная]",
+    "title" : "Выбрана программа страхования Минимальная",
+    "time" : {
+      "start" : 1517298886798,
+      "stop" : 1517298888968,
+      "duration" : 2170
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "goToNextCalcPage",
+    "title" : "Нажата кнопка подтверждения",
+    "time" : {
+      "start" : 1517298888971,
+      "stop" : 1517298889339,
+      "duration" : 368
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "stepWhenFillingFields[{Серия паспорта=1122, Имя=Иван, Номер паспорта=222333, Фамилия=Иванов, Имя застрахованного=Ivan, Ф...]",
+    "title" : "Заполняются поля",
+    "time" : {
+      "start" : 1517298889341,
+      "stop" : 1517298891757,
+      "duration" : 2416
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 11
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ {
+      "name" : "stepFillField[Серия паспорта, 1122]",
+      "title" : "Поле Серия паспорта заполняется значением 1122",
+      "time" : {
+        "start" : 1517298889348,
+        "stop" : 1517298889681,
+        "duration" : 333
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "stepFillField[Имя, Иван]",
+      "title" : "Поле Имя заполняется значением Иван",
+      "time" : {
+        "start" : 1517298889682,
+        "stop" : 1517298889838,
+        "duration" : 156
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "stepFillField[Номер паспорта, 222333]",
+      "title" : "Поле Номер паспорта заполняется значением 222333",
+      "time" : {
+        "start" : 1517298889839,
+        "stop" : 1517298890007,
+        "duration" : 168
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "stepFillField[Фамилия, Иванов]",
+      "title" : "Поле Фамилия заполняется значением Иванов",
+      "time" : {
+        "start" : 1517298890008,
+        "stop" : 1517298890181,
+        "duration" : 173
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "stepFillField[Имя застрахованного, Ivan]",
+      "title" : "Поле Имя застрахованного заполняется значением Ivan",
+      "time" : {
+        "start" : 1517298890182,
+        "stop" : 1517298890326,
+        "duration" : 144
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "stepFillField[Фамилия застрахованного, Ivanov]",
+      "title" : "Поле Фамилия застрахованного заполняется значением Ivanov",
+      "time" : {
+        "start" : 1517298890327,
+        "stop" : 1517298890481,
+        "duration" : 154
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "stepFillField[Кем выдан, Отделением УФМС по г.Москва]",
+      "title" : "Поле Кем выдан заполняется значением Отделением УФМС по г.Москва",
+      "time" : {
+        "start" : 1517298890482,
+        "stop" : 1517298890744,
+        "duration" : 262
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "stepFillField[Дата рождения застрахованного, 21.01.1990]",
+      "title" : "Поле Дата рождения застрахованного заполняется значением 21.01.1990",
+      "time" : {
+        "start" : 1517298890745,
+        "stop" : 1517298891107,
+        "duration" : 362
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "stepFillField[Отчество, Иванович]",
+      "title" : "Поле Отчество заполняется значением Иванович",
+      "time" : {
+        "start" : 1517298891108,
+        "stop" : 1517298891305,
+        "duration" : 197
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "stepFillField[Дата рождения, 21.01.1990]",
+      "title" : "Поле Дата рождения заполняется значением 21.01.1990",
+      "time" : {
+        "start" : 1517298891306,
+        "stop" : 1517298891511,
+        "duration" : 205
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "stepFillField[Дата выдачи, 21.01.1999]",
+      "title" : "Поле Дата выдачи заполняется значением 21.01.1999",
+      "time" : {
+        "start" : 1517298891511,
+        "stop" : 1517298891757,
+        "duration" : 246
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    } ]
+  }, {
+    "name" : "clickingCntBtn",
+    "title" : "Нажатие кнопки продолжить",
+    "time" : {
+      "start" : 1517298891758,
+      "stop" : 1517298891909,
+      "duration" : 151
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "errorValidation",
+    "title" : "Проверка ошибки",
+    "time" : {
+      "start" : 1517298891911,
+      "stop" : 1517298892014,
+      "duration" : 103
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "JUnit"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "suite-name",
+    "value" : "AllureReportTest"
+  }, {
+    "name" : "thread",
+    "value" : "7720@nb-03332.main(1)"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "host",
+    "value" : "nb-03332"
+  } ],
+  "parameters" : [ ]
+}

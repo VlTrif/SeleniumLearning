@@ -1,0 +1,37 @@
+{
+  "features" : [ {
+    "title" : "Without feature",
+    "statistic" : {
+      "total" : 1,
+      "passed" : 1,
+      "pending" : 0,
+      "canceled" : 0,
+      "failed" : 0,
+      "broken" : 0
+    },
+    "stories" : [ {
+      "uid" : "36a31abbd92756b6",
+      "title" : "Without story",
+      "statistic" : {
+        "total" : 1,
+        "passed" : 1,
+        "pending" : 0,
+        "canceled" : 0,
+        "failed" : 0,
+        "broken" : 0
+      },
+      "testCases" : [ {
+        "uid" : "9d116c5696777206",
+        "name" : "tryInsurance",
+        "title" : "Страхование",
+        "time" : {
+          "start" : 1517298880811,
+          "stop" : 1517298892019,
+          "duration" : 11208
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      } ]
+    } ]
+  } ]
+}

@@ -1,0 +1,14 @@
+{
+  "testCases" : [ {
+    "uid" : "9d116c5696777206",
+    "name" : "tryInsurance",
+    "title" : "Страхование",
+    "time" : {
+      "start" : 1517298880811,
+      "stop" : 1517298892019,
+      "duration" : 11208
+    },
+    "severity" : "NORMAL",
+    "status" : "PASSED"
+  } ]
+}
