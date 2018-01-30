@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="AllureReportTest" time="24.206" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="CucumberRunner" time="25.937" tests="11" errors="0" skipped="0" failures="0">
   <properties>
     <property name="idea.version" value="2017.2.6"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -63,5 +63,15 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="tryInsurance" classname="AllureReportTest" time="11.309"/>
+  <testcase name="Когда выбран пункт основного меню &quot;Застраховать себя &quot;" classname="Сценарий: Страхование путешественников" time="0.001"/>
+  <testcase name="И ожидание открытия меню" classname="Сценарий: Страхование путешественников" time="0"/>
+  <testcase name="Тогда выбран пункт доп. меню &quot;Страхование путешественников&quot;" classname="Сценарий: Страхование путешественников" time="0"/>
+  <testcase name="Когда нажатие на картинку - Оформить онлайн &quot;/portalserver/content/atom/contentRepository/content/person/travel/banner-zashita-traveler.jpg?id=f6c836e1-5c5c-4367-b0d0-bbfb96be9c53&quot;" classname="Сценарий: Страхование путешественников" time="0"/>
+  <testcase name="Когда переход на новую вкладку" classname="Сценарий: Страхование путешественников" time="0"/>
+  <testcase name="Тогда выбирается пакет страхования &quot;Минимальная&quot;" classname="Сценарий: Страхование путешественников" time="0"/>
+  <testcase name="Тогда нажатие кнопки подтверждение" classname="Сценарий: Страхование путешественников" time="0"/>
+  <testcase name="Когда заполняются поля:" classname="Сценарий: Страхование путешественников" time="0"/>
+  <testcase name="Тогда нажатие кнопки продолжить после заполнения полей" classname="Сценарий: Страхование путешественников" time="0.001"/>
+  <testcase name="Тогда присутствует сообщение об ошибке - Заполнены не все обязательные поля" classname="Сценарий: Страхование путешественников" time="0"/>
+  <testcase name="Сценарий: Страхование путешественников" classname="Сценарий: Страхование путешественников" time="0.754"/>
 </testsuite>

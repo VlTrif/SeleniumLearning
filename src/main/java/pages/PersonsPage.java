@@ -54,9 +54,9 @@ public class PersonsPage extends AbstractPage{
     @FindBy(xpath = "//*[contains(text(),'Продолжить')]")
     public WebElement cntButton;
 
-    public PersonsPage(WebDriver driver) {
-        PageFactory.initElements(driver, this);
-        (new WebDriverWait(driver, 10))
+    public PersonsPage() {
+        PageFactory.initElements(BaseSteps.getDriver(), this);
+        (new WebDriverWait(BaseSteps.getDriver(), 10))
                 .until(ExpectedConditions.visibilityOf(title));
     }
 

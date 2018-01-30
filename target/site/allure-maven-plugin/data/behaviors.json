@@ -1,6 +1,6 @@
 {
   "features" : [ {
-    "title" : "Without feature",
+    "title" : "Страхование",
     "statistic" : {
       "total" : 1,
       "passed" : 1,
@@ -10,8 +10,8 @@
       "broken" : 0
     },
     "stories" : [ {
-      "uid" : "36a31abbd92756b6",
-      "title" : "Without story",
+      "uid" : "7dbe0c7e291a2c9",
+      "title" : "Страхование путешественников",
       "statistic" : {
         "total" : 1,
         "passed" : 1,
@@ -21,13 +21,13 @@
         "broken" : 0
       },
       "testCases" : [ {
-        "uid" : "9d116c5696777206",
-        "name" : "tryInsurance",
-        "title" : "Страхование",
+        "uid" : "3f12f32ef0ce20c3",
+        "name" : "Страхование путешественников",
+        "title" : "Страхование путешественников",
         "time" : {
-          "start" : 1517298880811,
-          "stop" : 1517298892019,
-          "duration" : 11208
+          "start" : 1517314499748,
+          "stop" : 1517314523099,
+          "duration" : 23351
         },
         "severity" : "NORMAL",
         "status" : "PASSED"

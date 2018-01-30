@@ -21,8 +21,8 @@ public class MainPage extends AbstractPage{
     @FindBy(xpath = "//ul[contains(@aria-labelledby,'alt-menu-mid__header4')]//a[contains(@aria-label,'Застраховать себя ')]/../*[contains(@class,'alt-menu-collapser__area alt-menu-collapser__area_cols_3')]")
     WebElement altMenu;
 
-    public MainPage (WebDriver driver) {
-        PageFactory.initElements(driver, this);
+    public MainPage () {
+        PageFactory.initElements(BaseSteps.getDriver(), this);
 
     }
 

@@ -5,7 +5,7 @@ import ru.yandex.qatools.allure.annotations.Step;
 
 import static org.junit.Assert.assertTrue;
 
-public class CalcPageSteps extends BaseSteps{
+public class CalcPageSteps{
 
     /*@Step("заголовок первой страницы калькулятора равен {0}")
     public void checkPageTitle(String expectedTitle){
@@ -16,12 +16,12 @@ public class CalcPageSteps extends BaseSteps{
 
     @Step("Выбрана программа страхования {0}")
     public void selectBoxStep(String boxItem){
-        new CalcPage(driver).selectBox(boxItem);
+        new CalcPage().selectBox(boxItem);
     }
 
     @Step("Нажата кнопка подтверждения")
     public void goToNextCalcPage(){
-        new CalcPage(driver).confirmBtn.click();
+        new CalcPage().confirmBtn.click();
     }
 
 }

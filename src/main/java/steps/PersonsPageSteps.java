@@ -7,7 +7,7 @@ import java.util.HashMap;
 
 import static org.junit.Assert.assertTrue;
 
-public class PersonsPageSteps extends BaseSteps {
+public class PersonsPageSteps{
 
     /*@Step("заголовок второй страницы калькулятора равен {0}")
     public void checkPageTitle(String expectedTitle){
@@ -18,7 +18,7 @@ public class PersonsPageSteps extends BaseSteps {
 
     @Step("Поле {0} заполняется значением {1}")
     public void stepFillField(String field, String value){
-        new PersonsPage(driver).fillField(field,value);
+        new PersonsPage().fillField(field,value);
     }
 
     @Step("Заполняются поля")
@@ -28,10 +28,10 @@ public class PersonsPageSteps extends BaseSteps {
 
     @Step("Нажатие кнопки продолжить")
     public void clickingCntBtn(){
-        new PersonsPage(driver).cntButton.click();
+        new PersonsPage().cntButton.click();
     }
     @Step("Проверка ошибки")
     public void errorValidation() {
-        new PersonsPage(driver).checkFieldErrorMessage();
+        new PersonsPage().checkFieldErrorMessage();
     }
 }

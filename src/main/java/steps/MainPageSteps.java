@@ -6,13 +6,13 @@ import ru.yandex.qatools.allure.annotations.Step;
 import static org.junit.Assert.assertTrue;
 
 
-public class MainPageSteps extends BaseSteps{
+public class MainPageSteps{
 
 
     @Step("Выбран пункт меню {0}")
     public void selectMenuItem(String menuItem){
 
-        new MainPage(driver).selectMainMenu(menuItem);
+        new MainPage().selectMainMenu(menuItem);
     }
 
     /*@Step("заголовок первой страницы калькулятора равен {0}")
@@ -24,13 +24,13 @@ public class MainPageSteps extends BaseSteps{
 
     @Step("Ожидание открытия доп. меню")
     public void waitingMainPageTitleStep() {
-        new MainPage(driver).mainPageAltMenuWait();
+        new MainPage().mainPageAltMenuWait();
     }
 
     @Step("Выбран вид страхования {0}")
     public void selectAltMenuItem(String menuItem){
 
-        new MainPage(driver).selectAltMenu(menuItem);
+        new MainPage().selectAltMenu(menuItem);
     }
 
 }

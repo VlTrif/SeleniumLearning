@@ -1,7 +1,8 @@
 package steps;
 
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
+
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import util.TestProperties;
@@ -10,11 +11,12 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 public class BaseSteps {
-    /*public static WebDriver getDriver() {
+
+    public static WebDriver getDriver() {
         return driver;
     }
 
-    protected static WebDriver driver;
+    /*protected static WebDriver driver;
     protected static String baseUrl;
     public static Properties properties = TestProperties.getInstance().getProperties();
 
@@ -39,15 +41,17 @@ public class BaseSteps {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
         driver .manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+    }
+
+
+
+    public static WebDriver getDriver(){
+        return driver;
     }*/
 
     public static WebDriver driver;
 
-    public static WebDriver getDriver(){
-        return driver;
-    }
-
-    @BeforeClass
+    @Before
     public static void startTest(){
         System.setProperty("webdriver.chrome.driver", "drv/chromedriver.exe");
         driver = new ChromeDriver();
@@ -57,7 +61,7 @@ public class BaseSteps {
         driver .manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
     }
 
-    @AfterClass
+    @After
     public static void tearDown() throws Exception {
         driver.quit();
     }

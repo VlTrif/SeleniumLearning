@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="seleniumLearning" />
+        <module name="seleniumLearningAllTasksFromSecond" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="seleniumLearning" target="1.8" />
+      <module name="seleniumLearningAllTasksFromSecond" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -10,6 +10,11 @@ import java.util.ArrayList;
 
 import static org.junit.Assert.assertEquals;
 
+********************************
+*    SECOND TASK, COMMENTED    *
+********************************
+
+
 public class TaskTwoTest extends BaseSteps {
 
 

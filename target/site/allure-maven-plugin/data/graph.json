@@ -1,12 +1,12 @@
 {
   "testCases" : [ {
-    "uid" : "9d116c5696777206",
-    "name" : "tryInsurance",
-    "title" : "Страхование",
+    "uid" : "3f12f32ef0ce20c3",
+    "name" : "Страхование путешественников",
+    "title" : "Страхование путешественников",
     "time" : {
-      "start" : 1517298880811,
-      "stop" : 1517298892019,
-      "duration" : 11208
+      "start" : 1517314499748,
+      "stop" : 1517314523099,
+      "duration" : 23351
     },
     "severity" : "NORMAL",
     "status" : "PASSED"

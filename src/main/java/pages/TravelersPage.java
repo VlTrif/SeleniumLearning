@@ -8,6 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import steps.BaseSteps;
 
 public class TravelersPage extends AbstractPage{
     //WebDriver driver;
@@ -15,8 +16,8 @@ public class TravelersPage extends AbstractPage{
     @FindBy(xpath = "//*[contains(@class, 'sbrf-rich-outer')]/p/a[contains(@target, '_blank')]")
     WebElement clickImg;
 
-    public TravelersPage (WebDriver driver){
-        PageFactory.initElements(driver, this);
+    public TravelersPage (){
+        PageFactory.initElements(BaseSteps.getDriver(), this);
     }
 
     public void selectImg (String imgItem){

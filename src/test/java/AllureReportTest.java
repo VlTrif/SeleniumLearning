@@ -1,10 +1,14 @@
-import org.junit.Test;
+/*import org.junit.Test;
 import ru.yandex.qatools.allure.annotations.Title;
 import steps.*;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 
+
+********************************
+*     THIRD TASK, COMMENTED    *
+********************************
 public class AllureReportTest extends BaseSteps {
 
     @Test
@@ -48,4 +52,4 @@ public class AllureReportTest extends BaseSteps {
 
 
     }
-}
+}*/
